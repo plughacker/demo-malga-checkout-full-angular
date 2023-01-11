@@ -1,12 +1,12 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { PlugCheckoutModule } from '@plug-checkout-full/angular';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { MalgaCheckoutModule } from "@malga-checkout-full/angular";
 
-import { AppComponent } from './app.component';
+import { AppComponent } from "./app.component";
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, PlugCheckoutModule],
+  imports: [BrowserModule, MalgaCheckoutModule],
   providers: [],
   bootstrap: [AppComponent],
 })

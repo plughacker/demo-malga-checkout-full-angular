@@ -1,15 +1,13 @@
-<main>
-  <plug-checkout-full
-    sandbox
-    publicKey="<YOUR_PUBLIC_KEY>"
-    clientId="<YOUR_CLIENT_ID>"
-    merchantId="<YOUR_MERCHANT_ID>"
-    [paymentMethods]="paymentMethods"
-    [transactionConfig]="transactionConfig"
-    [dialogConfig]="dialogConfig"
-    [pageConfig]="pageConfig"
-    (transactionSuccess)="handlePaymentSuccess"
-    (transactionFailed)="handlePaymentFailed"
-  >
-  </plug-checkout-full>
-</main>
+<malga-checkout-full
+  sandbox
+  publicKey="<YOUR_PUBLIC_KEY>"
+  clientId="<YOUR_CLIENT_ID>"
+  merchantId="<YOUR_MERCHANT_ID>"
+  [paymentMethods]="paymentMethods"
+  [transactionConfig]="transactionConfig"
+  [dialogConfig]="dialogConfig"
+  [pageConfig]="pageConfig"
+  (transactionSuccess)="handlePaymentSuccess"
+  (transactionFailed)="handlePaymentFailed"
+>
+</malga-checkout-full>

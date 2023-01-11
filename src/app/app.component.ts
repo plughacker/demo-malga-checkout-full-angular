@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 
 import {
-  PlugCheckoutFullTransactionSuccessEvent,
-  PlugCheckoutFullTransactionErrorEvent,
+  MalgaCheckoutFullTransactionSuccessEvent,
+  MalgaCheckoutFullTransactionErrorEvent,
 } from "./app.types";
 
 @Component({
@@ -53,13 +53,12 @@ export class AppComponent {
     actionButtonLabel: "Continuar",
     errorActionButtonLabel: "Tentar novamente",
     successActionButtonLabel: "Continuar",
-    successRedirectUrl: "https://www.plugpagamentos.com/",
+    successRedirectUrl: "https://www.malga.io/",
   };
 
   pageConfig = {
-    brandUrl: "https://exampleurl/images/logo.png",
-    footerDescription: "Todos os direitos reservados © 2022 Plug Pagamentos.",
-    backRoute: "https://www.plugpagamentos.com/",
+    footerDescription: "Todos os direitos reservados © 2023 Malga.",
+    backRoute: "https://www.malga.io/",
     delivery: 0,
     products: [
       {
@@ -81,11 +80,11 @@ export class AppComponent {
     ],
   };
 
-  handlePaymentSuccess(data: PlugCheckoutFullTransactionSuccessEvent) {
+  handlePaymentSuccess(data: MalgaCheckoutFullTransactionSuccessEvent) {
     console.log(data);
   }
 
-  handlePaymentFailed(error: PlugCheckoutFullTransactionErrorEvent) {
+  handlePaymentFailed(error: MalgaCheckoutFullTransactionErrorEvent) {
     console.log(error);
   }
 }
