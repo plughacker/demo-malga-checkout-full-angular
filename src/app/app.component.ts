@@ -38,7 +38,7 @@ export class AppComponent {
   };
 
   transactionConfig = {
-    statementDescriptor: "#1 Demonstration Plug Checkout",
+    statementDescriptor: "#1 Demonstration Malga Checkout",
     amount: 100,
     description: "",
     orderId: "",
